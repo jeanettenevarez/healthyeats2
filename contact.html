@@ -26,22 +26,29 @@
 		<main><br>
 		<h1>Contact</h1>
 		<center>
-		<p style="font-size: 18px;">Feel free to reach out! You may contact me by filling out the form box below.</p><br>
-		<img src="glass2.jpg" alt="" width="68%">
+		<p style="font-size: 18px;">Feel free to reach out! You may contact me by filling out the contact form below.</p><br>
 		</center>
-		<form>
-			<label for="myName">Name:</label>
-			<input type="text" name="myName" id="myName">
+		<form action="mailto:jnevarez12@student.ccc.edu">
+		
+			<label for="myName">*Name:</label>
+			<input type="text" name="myName" id="myName"
+				required="required" placeholder="Your name">
+				
+			<label for="myPhone">Phone:</label>
+			<input type="tel" name="myPhone" id="myPhone"
+				required="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000">
 			
-			<label for="myEmail">E-mail:</label>
-			<input type="text" name="myEmail" id="myEmail">
+			<label for="myEmail">*E-mail:</label>
+			<input type="email" name="myEmail" id="myEmail"
+				required="required" placeholder="email@example.com">
 			
-			<label for="myComments">Comments:</label>
-			<textarea type="text" name="myComments" id="myComments" rows="5" cols="50"></textarea>
+			<label for="myComments">*Comments:</label>
+			<textarea name="myComments" id="myComments" rows="5" cols="50"
+				required="required" placeholder="Your comments..."></textarea>
 			<input id="mySubmit" type="submit" value="Submit">
 		</form><br><br><br>
 		</main>
-		</div>
+		</div><br><br><br><br>
 		<footer>
 		<br>
 		HealthyEats Copyright &copy; 2022 Created by Jeanette Nevarez
@@ -60,4 +67,4 @@
 		<br>
 		</footer>
 	</body>
-<html>
+</html>

@@ -211,6 +211,7 @@ input, textarea {
 	margin-top: 10px 15px auto 5px;
 	padding-left: 5px;
 	width: 95%;
+	height: 100%;
 	display: block; }
 	
 #mySubmit { 
@@ -229,12 +230,16 @@ input, textarea {
 	padding: 10px;
 	text-align: center;
 	display: grid;
-	grid-template-columns: 50% 50%;  
-	}
+	grid-template-columns: 33% 33% 33%; 
+	justify-content: space-evenly; 
+	justify-content: space-between;
+	gap: 15px; }
 	
 .grid-item {
 	padding: 20px 20px 5px 20px;
-	text-align: center; }
+	text-align: center; 
+	border: 2px solid #575957; 
+	background-color: #EDECE8; }
 	
 		
 		/* Footer Section */
